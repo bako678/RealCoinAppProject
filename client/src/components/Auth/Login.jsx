@@ -89,6 +89,9 @@ const Login = () => {
           <button
             className="cursor-pointer w-full text-center bg-violet-600 hover:bg-violet-800 text-white py-2 px-4 rounded"
             disabled={loading}
+            style={{
+              backgroundColor: 'purple',
+            }}
           >
             {loading ? <Spinner /> : "Sign In"}
           </button>

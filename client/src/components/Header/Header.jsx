@@ -31,7 +31,7 @@ const Header = () => {
   }, [dispatch, title]);
 
   return (
-    <div className="h-20 bg-violet-600 flex items-center justify-between px-5">
+    <div className="h-20 bg-purple-600 flex items-center justify-between px-5">
       <div
         onClick={() => navigate("/")}
         className="text-white font-bold text-2xl cursor-pointer"

@@ -121,6 +121,9 @@ const Register = ({}) => {
           type="submit"
           className="w-full cursor-pointer bg-violet-600 hover:bg-violet-800 p-2 text-center text-white rounded-md"
           disabled={loading}
+          style={{
+            backgroundColor: 'purple',
+          }}
         >
           {loading ? <Spinner /> : "Register"}
         </button>

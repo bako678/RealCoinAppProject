@@ -1,6 +1,7 @@
 import React from "react";
 import CategoryList from "../../components/CategoryList/CategoryList.jsx";
 import Serach from "../../components/Search/Serach.jsx";
+import "./home.css";
 
 const Home = () => {
   return (

@@ -12,6 +12,7 @@ import {
 import { filterCoin } from "../../features/coin/coinSlice.js";
 import { categorySearch } from "../../features/category/categorySlice.js";
 
+
 const Search = () => {
   const [title, setTitle] = useState("");
   const dispatch = useDispatch();
@@ -71,6 +72,9 @@ const Search = () => {
                 onClick={() => {
                   navigate("/");
                 }}
+                style={{
+                  backgroundColor: 'purple',
+                }}
                 className="border rounded-md border-violet-600 w-36 cursor-pointer text-sm py-4 px-9 hover:bg-violet-800 text-center bg-violet-600 text-white"
               >
                 Categories
@@ -79,6 +83,9 @@ const Search = () => {
               <button
                 onClick={() => {
                   navigate("/coins");
+                }}
+                style={{
+                  backgroundColor: 'purple',
                 }}
                 className="border rounded-md border-violet-600 w-36 cursor-pointer text-sm py-4 px-9 hover:bg-violet-800 text-center bg-violet-600 text-white"
               >
@@ -89,6 +96,9 @@ const Search = () => {
               <button
                 onClick={() => {
                   navigate("/my_coins");
+                }}
+                style={{
+                  backgroundColor: 'purple',
                 }}
                 className="border rounded-md border-violet-600 w-36 cursor-pointer text-sm py-4 hover:bg-violet-800 text-center bg-violet-600 text-white"
               >

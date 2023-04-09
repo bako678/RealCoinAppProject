@@ -2,6 +2,7 @@ import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 
+
 const Category = ({ title, image, _id }) => {
   const navigate = useNavigate();
 
@@ -13,10 +14,16 @@ const Category = ({ title, image, _id }) => {
   return (
     <>
       <div className="w-4/12">
-        <h2 className="text-3xl text-gray-700  mb-5 font-medium break-words">
+      <Link
+            className="text-sm font-light cursor-pointer"
+            to={`/category/${_id}`}
+          >
+        <h2 className="text-3xl italic text-purple-700  mb-5 font-medium break-words">
           {title}
         </h2>
-        <div className="flex items-center mb-3 w-fit">
+        </Link>
+
+        <div class="secondDiv" className="flex items-center mb-3 w-fit">
           <Link
             className="text-sm font-light cursor-pointer"
             to={`/category/${_id}`}

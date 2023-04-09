@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getCategories } from "../../features/category/categoryActions.js";
 import Spinner from "../Spinner/Spinner.jsx";
 
+
 const CategoryList = () => {
   const categories = useSelector((state) => state.category.categories);
 
